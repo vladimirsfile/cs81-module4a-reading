@@ -61,6 +61,10 @@ function mostReadBook(log) {
 }
 
 // Prints a summary of minutes read per day
+// This function goes over the log and prints out a summary of
+// all reading activities. 
+// The for loop goes over the day, the minutes, and the title of 
+// each one of the objects in the log. 
 function printDailySummary(log) {
   for (let entry of log) {
     console.log(`${entry.day}: ${entry.minutes} mins reading "${entry.book}"`);
