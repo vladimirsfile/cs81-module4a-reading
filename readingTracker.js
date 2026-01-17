@@ -33,6 +33,10 @@ function totalReadingMinutes(log) {
 }
 
 // Returns the book read most frequently
+// The function calculates which book appears the most. 
+// The result is string - the book title.
+// The for loop goes through the logs and builds the 
+// tally list - bookCounts.
 function mostReadBook(log) {
   const bookCounts = {};
   for (let entry of log) {
@@ -43,6 +47,8 @@ function mostReadBook(log) {
     }
   }
 
+// This for loop now iterates over the titls that we accumulated
+// from the loop above. 
   let maxBook = null;
   let maxCount = 0;
   for (let book in bookCounts) {
