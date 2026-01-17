@@ -1,4 +1,5 @@
 // Weekly reading log
+
 const readingLog = [
   { day: "Monday", book: "Dune", minutes: 30 },
   { day: "Tuesday", book: "1984", minutes: 20 },
@@ -8,12 +9,21 @@ const readingLog = [
 ];
 
 // Adds a new reading entry to the log
+// The function takes 3 parameters - the day of the week, the title of 
+// the book, and the number of minutes read. The data for the day of the
+// week and the title of the book is stored as strings. The data for the
+// minutes read is stored as numbers. 
+
+//The function adds adds the data to the readingLog. 
 function addReadBook(day, book, minutes) {
   const newEntry = { day, book, minutes };
+  // the function adds the new entry using the push method.
   readingLog.push(newEntry);
 }
 
 // Returns total minutes spent reading all week
+// Thhis function takes minutes as a parameter. This data is stored as 
+// numbers. It loops through the log and adds the total minutes for the week.
 function totalReadingMinutes(log) {
   let total = 0;
   for (let entry of log) {
