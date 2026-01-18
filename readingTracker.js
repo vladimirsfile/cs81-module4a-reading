@@ -76,3 +76,9 @@ addReadBook("Saturday", "Dune", 50);
 printDailySummary(readingLog);
 console.log("Total minutes read:", totalReadingMinutes(readingLog));
 console.log("Most read book:", mostReadBook(readingLog));
+
+
+// Calling the addReadBook function with the last day of the week - Sunday.
+// I chose "Floquent JavaScript".
+addReadBook("Sunday", "Floquent JavaScript", 77);
+console.log("The most read book after the last update" + mostReadBook(readingLog));
