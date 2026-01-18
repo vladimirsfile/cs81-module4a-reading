@@ -8,7 +8,7 @@ const readingLog = [
   { day: "Friday", book: "1984", minutes: 15 }
 ];
 
-// Adds a new reading entry to the log
+// Adds a new reading entry to the log, which is array of objects.
 // The function takes 3 parameters - the day of the week, the title of 
 // the book, and the number of minutes read. The data for the day of the
 // week and the title of the book is stored as strings. The data for the
